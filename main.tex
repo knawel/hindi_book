@@ -1,0 +1,102 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Engine & Fonts (XeLaTeX) ---
+\usepackage{ucharclasses}
+\setTransitionsForDevanagari{\hindifont}{\normalfont}
+\setTransitionTo{DevanagariExtended}{\hindifont}
+\setTransitionTo{DevanagariExtended}{\hindifont}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\setmainlanguage{english}
+\setotherlanguage{hindi}
+\newfontfamily\hindifont{Noto Sans Devanagari}[Script=Devanagari, Scale=1.1]
+\setmainfont{TeX Gyre Termes}   % Times-like, widely available
+
+% --- Layout ---
+\usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.8cm, right=2.8cm]{geometry}
+\usepackage{parskip}
+\setlength{\parindent}{0pt}
+
+% --- Tables ---
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{longtable}
+
+% --- Colours ---
+\usepackage[dvipsnames]{xcolor}
+\definecolor{accent}{RGB}{180, 60, 40}
+\definecolor{shaderow}{RGB}{247, 243, 239}
+
+% --- Section Headings ---
+\usepackage{titlesec}
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\normalsize\bfseries}{}{0em}{}
+\titleformat{\subsubsection}{\normalsize\itshape}{}{0em}{}
+
+% --- Header / Footer ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textit{Hindi Learning Guide}}
+\fancyhead[R]{\small\textit{\rightmark}}
+\fancyfoot[C]{\small\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+
+% --- Hyperlinks ---
+\usepackage[colorlinks=true, linkcolor=accent, urlcolor=accent]{hyperref}
+
+% --- Misc ---
+\usepackage{enumitem}
+\setlist{noitemsep, topsep=4pt}
+\usepackage{microtype}
+
+% -----------------------------------------------------------
+% Custom commands
+% \hw{Hindi text}  — inline Devanagari
+\newcommand{\hw}[1]{{\hindifont #1}}
+
+% \pattern{formula}  — shaded formula box
+\newcommand{\pattern}[1]{%
+  \vspace{4pt}%
+  \colorbox{shaderow}{\parbox{\dimexpr\linewidth-2\fboxsep\relax}{\small\ttfamily #1}}%
+  \vspace{4pt}%
+}
+
+% -----------------------------------------------------------
+\begin{document}
+
+% Title page
+\begin{titlepage}
+  \centering
+  \vspace*{3.5cm}
+  {\Huge\bfseries Hindi Learning Guide\par}
+  \vspace{0.6cm}
+  {\large\color{accent}{\hindifont हिन्दी सीखना} — Personal Reference \& Notes\par}
+  \vspace{1.2cm}
+  \textcolor{accent}{\rule{0.35\textwidth}{0.5pt}}
+  \vspace{1.2cm}
+
+  {\normalsize
+    \begin{tabular}{@{}rl@{}}
+      Started:  & \the\year \\
+      Teacher:  & Native speaker (Zoom) \\
+      Level:    & Beginner / A1--A2 \\
+    \end{tabular}
+  }
+
+  \vfill
+  {\small\color{gray} Compiled from weekly Zoom sessions.\\ Expand each section as topics are covered.}
+\end{titlepage}
+
+\tableofcontents
+\clearpage
+
+% -----------------------------------------------------------
+\input{chapters/grammar}
+\clearpage
+\input{chapters/vocabulary}
+\clearpage
+\input{chapters/sentences}
+
+\end{document}
