@@ -10,18 +10,18 @@
 
 \begin{tabular}{@{}llll@{}}
   \toprule
-  Roman & Devanagari & Note \\
+  Roman & Devanagari & IPA & Note \\
   \midrule
-  a   & \hw{अ} & /ə/ & short, like \textit{u} in \textit{but} \\
-  aa  & \hw{आ} & /aː/ & long, like \textit{a} in \textit{father} \\
-  i   & \hw{इ} & /ɪ/ & short, like \textit{i} in \textit{bit} \\
-  ii  & \hw{ई} & /iː/ & long, like \textit{ee} in \textit{see} \\
-  u   & \hw{उ} & /ʊ/ & short, like \textit{u} in \textit{put} \\
-  uu  & \hw{ऊ} & /uː/ & long, like \textit{oo} in \textit{food} \\
-  e   & \hw{ए} & /eː/ & like \textit{a} in \textit{say} \\
-  ai  & \hw{ऐ} & /ɛː/ & like \textit{e} in \textit{bed} \\
-  o   & \hw{ओ} & /oː/ & like \textit{o} in \textit{go} \\
-  au  & \hw{औ} & /ɔː/ & like \textit{aw} in \textit{law} \\
+  a   & \hw{अ} & {\ipafont /ə/} & short, like \textit{u} in \textit{but} \\
+  aa  & \hw{आ} & {\ipafont /aː/} & long, like \textit{a} in \textit{father} \\
+  i   & \hw{इ} & {\ipafont /ɪ/} & short, like \textit{i} in \textit{bit} \\
+  ii  & \hw{ई} & {\ipafont /iː/} & long, like \textit{ee} in \textit{see} \\
+  u   & \hw{उ} & {\ipafont /ʊ/} & short, like \textit{u} in \textit{put} \\
+  uu  & \hw{ऊ} & {\ipafont /uː/} & long, like \textit{oo} in \textit{food} \\
+  e   & \hw{ए} & {\ipafont /eː/} & like \textit{a} in \textit{say} \\
+  ai  & \hw{ऐ} & {\ipafont /ɛː/} & like \textit{e} in \textit{bed} \\
+  o   & \hw{ओ} & {\ipafont /oː/} & like \textit{o} in \textit{go} \\
+  au  & \hw{औ} & {\ipafont /ɔː/} & like \textit{aw} in \textit{law} \\
   % --- add more as covered ---
   \bottomrule
 \end{tabular}
@@ -48,7 +48,8 @@ Hindi has two grammatical genders: \textbf{masculine} and \textbf{feminine}. Gen
   \midrule
   Masculine & -aa & -e & \textit{ladkaa} → \textit{la.Rke} \\
   Feminine  & -ii & -iyaa.N & \textit{ladkii} → \textit{la.Rkiyaa.N} \\
-  Other     & — & unchanged & \textit{kitaab} → \textit{kitaaben} \\
+  Masc.\ (other endings) & — & unchanged & \textit{ghar} → \textit{ghar} \\
+  Fem.\ (other endings)  & — & -en & \textit{kitaab} → \textit{kitaaben} \\
   \bottomrule
 \end{tabular}
 
@@ -139,13 +140,13 @@ Root = infinitive minus \textit{-naa}: \textit{jaa-}.
 
 \begin{tabular}{@{}llll@{}}
   \toprule
-  Subject & Present & Transliteration & Hindi \\
+  Subject & Present & Past (m. / f.) & Hindi (present; past) \\
   \midrule
-  main        & hoon & hoon  & \hw{हूँ} \\
-  tuu         & hai   & hai   & \hw{है} \\
-  tum         & ho    & ho    & \hw{हो} \\
-  aap/vah/yah & hai   & hai   & \hw{है} \\
-  ham/ve      & hain  & hain  & \hw{हैं} \\
+  main        & hoon  & thaa / thii   & \hw{हूँ; था / थी} \\
+  tuu         & hai   & thaa / thii   & \hw{है; था / थी} \\
+  tum         & ho    & the / thiin   & \hw{हो; थे / थीं} \\
+  yah/vah     & hai   & thaa / thii   & \hw{है; था / थी} \\
+  aap/ham/ve  & hain  & the / thiin   & \hw{हैं; थे / थीं} \\
   \bottomrule
 \end{tabular}
 
@@ -159,9 +160,9 @@ Root = infinitive minus \textit{-naa}: \textit{jaa-}.
   \toprule
   Transliteration & Hindi & English \\
   \midrule
-  main chaay piitaa hoon & \hw{मैं चाय पीता हूँ.} & I drink tea. (m.) \\
-  vah roz jaatii hai      & \hw{वह रोज़ जाती है.}  & She goes every day. \\
-  ham Hindi sikhte hain   & \hw{हम हिंदी सीखते हैं.} & We learn Hindi. \\
+  main chaay piitaa hoon & \hw{मैं चाय पीता हूँ।} & I drink tea. (m.) \\
+  vah roz jaatii hai      & \hw{वह रोज़ जाती है।}  & She goes every day. \\
+  ham Hindi siikhte hain   & \hw{हम हिंदी सीखते हैं।} & We learn Hindi. \\
   \bottomrule
 \end{tabular}
 
@@ -175,20 +176,37 @@ Root = infinitive minus \textit{-naa}: \textit{jaa-}.
   \toprule
   Transliteration & Hindi & English \\
   \midrule
-  main Hindi sikh rahaa hoon     & \hw{मैं हिंदी सीख रहा हूँ।}       & I am learning Hindi. (m.) \\
+  main Hindi siikh rahaa hoon     & \hw{मैं हिंदी सीख रहा हूँ।}       & I am learning Hindi. (m.) \\
   merii patnii khaa rahii hai    & \hw{मेरी पत्नी खाना खा रही है।}   & My wife is eating. \\
   aap kyaa kar rahe ho?          & \hw{आप क्या कर रहे हो?}            & What are you doing? \\
   bacchaa ananaas khaa rahaa hai & \hw{बच्चा अनानास खा रहा है।}       & The child is eating pineapple. \\
   \bottomrule
 \end{tabular}
 
-\subsubsection{Simple Past Tense (भूतकाल)}
+\subsubsection{Simple Past Tense (\hw{भूतकाल})}
 
 \pattern{Intransitive: Subject + verb-stem + aa/ii/e + (thaa/thii/the)}
 \pattern{Transitive:\ \ \ \ Subject\,+\,\textbf{ne} + Object + verb-pp + thaa/thii/the}
 
 Transitive verbs (those taking a direct object) require \textbf{-ne} on the subject.\\
 Intransitive verbs (motion, states) do \emph{not} take \textit{-ne}.
+
+\noindent\textit{Note:} plain \hw{मैं गया} = I went. Adding \hw{था} (\hw{मैं गया था}) = I had gone / I went (some time ago). In conversation both are heard; for ``yesterday I did X'' the plain form is the default.
+
+\textbf{Irregular past participles} (learn these by heart):
+
+\begin{tabular}{@{}llll@{}}
+  \toprule
+  Infinitive & Past (m.sg.) & Hindi & Meaning \\
+  \midrule
+  jaanaa & gayaa  & \hw{जाना} → \hw{गया}   & went \\
+  karnaa & kiyaa  & \hw{करना} → \hw{किया}  & did \\
+  denaa  & diyaa  & \hw{देना} → \hw{दिया}  & gave \\
+  lenaa  & liyaa  & \hw{लेना} → \hw{लिया}  & took \\
+  piinaa & piyaa  & \hw{पीना} → \hw{पिया}  & drank \\
+  honaa  & huaa   & \hw{होना} → \hw{हुआ}   & happened / became \\
+  \bottomrule
+\end{tabular}
 
 \begin{tabular}{@{}lll@{}}
   \toprule
@@ -217,7 +235,7 @@ Used for repeated or habitual actions in the past. Compare: Present Habitual use
   \bottomrule
 \end{tabular}
 
-\subsubsection{Future Tense (भविष्य काल)}
+\subsubsection{Future Tense (\hw{भविष्य काल})}
 
 \pattern{Subject + [Object] + verb-stem + uungaa/uungii/enge (inflects for gender \& person)}
 
@@ -225,10 +243,10 @@ Used for repeated or habitual actions in the past. Compare: Present Habitual use
   \toprule
   Subject & Masc.\ ending & Fem.\ ending & Example \\
   \midrule
-  main    & -uungaa  & -uungii  & \hw{मैं जाऊंगा / जाऊंगी।} \\
-  tum     & -oge     & -ogii    & \hw{तुम जाओगे / जाओगी।} \\
-  aap/vah & -enge    & -engii   & \hw{आप/वह जाएंगे / जाएंगी।} \\
-  ham     & -enge    & -engii   & \hw{हम जाएंगे।} \\
+  main        & -uungaa  & -uungii  & \hw{मैं जाऊंगा / जाऊंगी।} \\
+  tuu/yah/vah & -egaa    & -egii    & \hw{वह जाएगा / जाएगी।} \\
+  tum         & -oge     & -ogii    & \hw{तुम जाओगे / जाओगी।} \\
+  aap/ham/ve  & -enge    & -engii   & \hw{आप/हम/वे जाएंगे / जाएंगी।} \\
   \bottomrule
 \end{tabular}
 
@@ -242,8 +260,63 @@ Used for repeated or habitual actions in the past. Compare: Present Habitual use
   \bottomrule
 \end{tabular}
 
-\subsubsection{Imperative}
-\textit{[Placeholder — fill in when covered.]}
+\subsubsection{Present Perfect — \textit{have done}}
+
+\pattern{Subject\,+\,\textbf{ne} + Object + verb-pp + hai/hain \ \ \textnormal{(transitive)}}
+\pattern{Subject + verb-pp + hoon/hai/hain \ \ \textnormal{(intransitive)}}
+
+Same as the simple past, but ends in \textit{hai/hain} instead of \textit{thaa/the}. Used for experiences and results that still matter now. With \textit{ne}, the verb agrees with the \emph{object} (see 1.11).
+
+\begin{tabular}{@{}lll@{}}
+  \toprule
+  Transliteration & Hindi & English \\
+  \midrule
+  mainne kuTTuu khaayaa hai            & \hw{मैंने कुट्टू खाया है।}          & I have eaten buckwheat. \\
+    mainne kuTTuu ke phuul dekhe hain    & \hw{मैंने कुट्टू के फूल देखे हैं।}   & I've seen buckwheat flowers. \\
+  main Ladakh gayaa hoon               & \hw{मैं लद्दाख गया हूँ।}             & I've been to Ladakh. \\
+  \bottomrule
+\end{tabular}
+
+\subsubsection{Imperative — commands \& requests}
+
+Three levels of politeness, matching the three words for "you". Use the \textbf{aap} form by default (teacher, strangers, shops).
+
+\begin{tabular}{@{}llll@{}}
+  \toprule
+  Level & Formation & Example & Hindi \\
+  \midrule
+  \textit{tuu} (intimate/rude) & stem       & jaa, khaa, baiTh     & \hw{जा, खा, बैठ} \\
+  \textit{tum} (familiar)      & stem + o   & jaao, khaao, baiTho  & \hw{जाओ, खाओ, बैठो} \\
+  \textit{aap} (polite)        & stem + iye & jaaiye, khaaiye, baiThiye & \hw{जाइए, खाइए, बैठिए} \\
+  \bottomrule
+\end{tabular}
+
+\textbf{Irregular forms} (very common — learn these):
+
+\begin{tabular}{@{}llll@{}}
+  \toprule
+  Infinitive & \textit{tum} form & \textit{aap} form & Hindi (\textit{tum}; \textit{aap}) \\
+  \midrule
+  karnaa (do)   & karo  & kiijiye  & \hw{करो; कीजिए} \\
+  denaa (give)  & do    & diijiye  & \hw{दो; दीजिए} \\
+  lenaa (take)  & lo    & liijiye  & \hw{लो; लीजिए} \\
+  piinaa (drink) & piyo & piijiye  & \hw{पियो; पीजिए} \\
+  \bottomrule
+\end{tabular}
+
+\textbf{Negative:} \textit{mat} (\hw{मत}) with \textit{tum}; \textit{na} (\hw{न}) sounds softer with \textit{aap}.
+
+\begin{tabular}{@{}p{4.4cm}p{5.0cm}p{4.8cm}@{}}
+  \toprule
+  Transliteration & Hindi & English \\
+  \midrule
+  yahaan aaiye                & \hw{यहाँ आइए।}               & Come here, please. \\
+  paanii piijiye              & \hw{पानी पीजिए।}             & Please drink some water. \\
+  mujhe kitaab do             & \hw{मुझे किताब दो।}          & Give me the book. (\textit{tum}) \\
+  mat jaao                    & \hw{मत जाओ।}                 & Don't go. \\
+  kripayaa yahaan na baiThiye & \hw{कृपया यहाँ न बैठिए।}      & Please don't sit here. \\
+  \bottomrule
+\end{tabular}
 
 % ------------------------------------------------------------
 \subsection{1.7 Question Words (\hw{प्रश्नवाचक शब्द})}
@@ -256,7 +329,7 @@ Used for repeated or habitual actions in the past. Compare: Present Habitual use
   who       & kaun    & \hw{कौन}    & \hw{वह कौन है?} — Who is that? \\
   where     & kahaan & \hw{कहाँ}   & \\
   when      & kab     & \hw{कब}     & \\
-  why       & kyõ    & \hw{क्यों}  & \\
+  why       & kyon    & \hw{क्यों}  & \\
   how       & kaise   & \hw{कैसे}   & \hw{आप कैसे हैं?} — How are you? \\
   how much  & kitnaa  & \hw{कितना}  & inflects for gender \\
   \bottomrule
@@ -277,13 +350,13 @@ Compare with English (SVO):
   Language & Order & Example \\
   \midrule
   English & S–V–O & I drink tea. \\
-  Hindi   & S–O–V & \hw{मैं चाय पीता हूँ.} \\
+  Hindi   & S–O–V & \hw{मैं चाय पीता हूँ।} \\
   \bottomrule
 \end{tabular}
 
 \subsection{1.9 Obligation — \textit{ko + Infinitive + honaa}}
 
-Used to express necessity ("must", "have to"). The subject takes oblique form + \textit{ko}; the infinitive stays unchanged.
+Used to express necessity (``must'', ``have to''). The subject takes oblique form + \textit{ko}; the infinitive stays unchanged.
 
 \pattern{Subject (oblique + ko) + Infinitive + hogaa / hai}
 
@@ -293,7 +366,7 @@ Used to express necessity ("must", "have to"). The subject takes oblique form + 
   \midrule
   mujhe jaanaa hogaa       & \hw{मुझे जाना होगा।}         & I will have to go. \\
   aapko Nepaal aanaa hogaa & \hw{आपको नेपाल आना होगा।}    & You must come to Nepal. \\
-  mujhe 5 km dauRnaa hogaa & \hw{मुझे 5 km दौड़ना होगा।}  & I will have to run 5 km. \\
+  mujhe 5 kilomiiTar dauRnaa hogaa & \hw{मुझे 5 किलोमीटर दौड़ना होगा।}  & I will have to run 5 km. \\
   tumhen kaam karnaa hai   & \hw{तुम्हें काम करना है।}     & You have to work. \\
   \bottomrule
 \end{tabular}
@@ -308,12 +381,130 @@ The reference point (what you compare \emph{against}) takes \textit{se}. The adj
   \toprule
   Transliteration & Hindi & English \\
   \midrule
-  merii bahan mujhse baRii hai    & \hw{मेरी बहन मुझसे बड़ी है।}   & My sister is bigger/older than me. \\
-  meraa bhaaii mujhse chhoTaa hai & \hw{मेरा भाई मुझसे छोटा है।}  & My brother is smaller/younger than me. \\
+  merii bahan mujhse baRii hai    & \hw{मेरी बहन मुझसे बड़ी है।}   & My sister is older than me. \\
+  meraa bhaaii mujhse chhoTaa hai & \hw{मेरा भाई मुझसे छोटा है।}  & My brother is younger than me. \\
   Roos ek baRaa desh hai          & \hw{रूस एक बड़ा देश है।}       & Russia is a big country. \\
   \bottomrule
 \end{tabular}
 
-\subsection{1.11 [Add New Grammar Topic Here]}
+\subsubsection{Superlative — \textit{sabse} + adjective}
+
+\pattern{sabse + adjective (inflected) \ \ = \ \ the most \ldots{} (lit.\ ``than all'')}
+
+\begin{tabular}{@{}p{4.4cm}p{5.2cm}p{4.6cm}@{}}
+  \toprule
+  Transliteration & Hindi & English \\
+  \midrule
+  sabse uunchaa pahaaR           & \hw{सबसे ऊँचा पहाड़}                  & the highest mountain \\
+  sabse uunchii jagah 5400 miiTar par thii & \hw{सबसे ऊँची जगह 5400 मीटर पर थी।} & The highest point was at 5400 m. \\
+  vah sabse achchhaa dost hai    & \hw{वह सबसे अच्छा दोस्त है।}          & He is the best friend. \\
+  \bottomrule
+\end{tabular}
+
+\subsection{1.11 Ergative Agreement — verb agrees with the object}
+
+With \textit{ne} (transitive verbs in past/perfect), the verb does \textbf{not} agree with the subject. It agrees in gender and number with the \textbf{object}.
+
+\pattern{Subject\,+\,ne + Object (m./f., sg./pl.) + verb-pp matching the object}
+
+\begin{tabular}{@{}lll@{}}
+  \toprule
+  Transliteration & Hindi & English \\
+  \midrule
+  mainne saaikal chalaaii        & \hw{मैंने साइकिल चलाई।}       & I rode a bike. (f.) \\
+  mainne kuTTuu khaayaa          & \hw{मैंने कुट्टू खाया।}        & I ate buckwheat. (m.sg.) \\
+  mainne phuul dekhe             & \hw{मैंने फूल देखे।}           & I saw flowers. (m.pl.) \\
+  \bottomrule
+\end{tabular}
+
+\noindent\textit{Common mistake:} \hw{मैं साइकिल चलाई} (wrong) → \hw{मैंने साइकिल चलाई} (right). \textit{chalaanaa} is transitive, so the subject needs \textit{ne}.
+
+\subsection{1.12 Oblique Case of Nouns}
+
+Before \textbf{any postposition} (\textit{ko, se, men, par, kaa/kii/ke, tak, ke saath}\ldots), a noun changes to its \textbf{oblique} form. Only masculine \textit{-aa} nouns change in the singular; \textbf{all} nouns take \textit{-on} in the oblique plural.
+
+\begin{tabular}{@{}lllll@{}}
+  \toprule
+  Type & Sg.\ direct & Sg.\ oblique & Pl.\ direct & Pl.\ oblique \\
+  \midrule
+  m.\ \textit{-aa}   & \hw{लड़का} laRkaa & \hw{लड़के} laRke  & \hw{लड़के} laRke       & \hw{लड़कों} laRkon \\
+  m.\ other          & \hw{घर} ghar      & \hw{घर} ghar      & \hw{घर} ghar           & \hw{घरों} gharon \\
+  f.\ \textit{-ii}   & \hw{लड़की} laRkii & \hw{लड़की} laRkii & \hw{लड़कियाँ} laRkiyaan & \hw{लड़कियों} laRkiyon \\
+  f.\ other          & \hw{किताब} kitaab & \hw{किताब} kitaab & \hw{किताबें} kitaaben  & \hw{किताबों} kitaabon \\
+  \bottomrule
+\end{tabular}
+
+\textit{-aa} adjectives go oblique too: \textit{baRaa kamraa} → \textit{baRe kamre men}.
+Exceptions: kinship words like \textit{pitaa}, \textit{chaachaa} do not change in the singular (\hw{पिता को}).
+
+\begin{tabular}{@{}p{4.4cm}p{5.0cm}p{4.8cm}@{}}
+  \toprule
+  Transliteration & Hindi & English \\
+  \midrule
+  laRke ko paanii do        & \hw{लड़के को पानी दो।}        & Give the boy water. \\
+  vah kamre men hai         & \hw{वह कमरे में है।}           & He is in the room. \\
+  main bachchon ke saath thaa & \hw{मैं बच्चों के साथ था।}   & I was with the children. \\
+  in dukaanon men           & \hw{इन दुकानों में}             & in these shops \\
+  baRe shahar se            & \hw{बड़े शहर से}               & from a big city \\
+  \bottomrule
+\end{tabular}
+
+\subsection{1.13 Possessives \& \textit{apnaa}}
+
+Possessives behave like \textit{-aa} adjectives: \textit{-aa / -e / -ii} agree with the \textbf{possessed} thing, not the owner.
+
+\begin{tabular}{@{}llll@{}}
+  \toprule
+  Owner & m.sg. / m.pl. / f. & Hindi & English \\
+  \midrule
+  main   & meraa / mere / merii             & \hw{मेरा / मेरे / मेरी}         & my \\
+  tuu    & teraa / tere / terii             & \hw{तेरा / तेरे / तेरी}         & your (intimate) \\
+  tum    & tumhaaraa / -e / -ii             & \hw{तुम्हारा / तुम्हारे / तुम्हारी} & your (familiar) \\
+  aap    & aapkaa / -ke / -kii              & \hw{आपका / आपके / आपकी}       & your (polite) \\
+  yah    & iskaa / -ke / -kii               & \hw{इसका / इसके / इसकी}       & his/her/its (near) \\
+  vah    & uskaa / -ke / -kii               & \hw{उसका / उसके / उसकी}       & his/her/its (far) \\
+  ham    & hamaaraa / -e / -ii              & \hw{हमारा / हमारे / हमारी}     & our \\
+  ve     & unkaa / -ke / -kii               & \hw{उनका / उनके / उनकी}       & their; his/her (respectful) \\
+  kaun   & kiskaa / -ke / -kii              & \hw{किसका / किसके / किसकी}     & whose? \\
+  \bottomrule
+\end{tabular}
+
+\subsubsection{\textit{apnaa} (\hw{अपना}) — one's own}
+
+When the owner is the \textbf{subject of the same sentence}, use \textit{apnaa/apne/apnii} instead of \textit{meraa, uskaa}\ldots
+
+\begin{tabular}{@{}p{4.4cm}p{5.0cm}p{4.8cm}@{}}
+  \toprule
+  Transliteration & Hindi & English \\
+  \midrule
+  main apne ghar jaataa hoon     & \hw{मैं अपने घर जाता हूँ।}      & I go to my (own) home. \\
+  vah apnii kitaab paRhtii hai   & \hw{वह अपनी किताब पढ़ती है।}    & She reads her own book. \\
+  vah uskii kitaab paRhtii hai   & \hw{वह उसकी किताब पढ़ती है।}    & She reads her (someone else's) book. \\
+  meraa ghar baRaa hai           & \hw{मेरा घर बड़ा है।}            & My house is big. (\textit{ghar} is the subject → \textit{meraa}) \\
+  \bottomrule
+\end{tabular}
+
+\noindent\textit{Common mistake:} \hw{मैं मेरे घर जाता हूँ} (wrong) → \hw{मैं अपने घर जाता हूँ} (right).
+
+\subsection{1.14 Conditionals — \textit{agar \ldots{} to}}
+
+\pattern{agar + [condition] , to + [result]}
+
+\textit{agar} (\hw{अगर}) = if; \textit{to} (\hw{तो}) = then. \textit{to} is almost never dropped. For real future conditions, both halves usually use the future tense (English uses present after "if").
+
+\begin{tabular}{@{}p{4.4cm}p{5.0cm}p{4.8cm}@{}}
+  \toprule
+  Transliteration & Hindi & English \\
+  \midrule
+  agar baarish hogii, to main ghar par rahuungaa & \hw{अगर बारिश होगी, तो मैं घर पर रहूँगा।} & If it rains, I'll stay at home. \\
+  agar tum aaoge, to ham saath khaaenge & \hw{अगर तुम आओगे, तो हम साथ खाएँगे।} & If you come, we'll eat together. \\
+  agar aap thake hain, to aaraam kiijiye & \hw{अगर आप थके हैं, तो आराम कीजिए।} & If you are tired, rest. \\
+  agar mujhe samay milegaa, to main Nepaal jaaungaa & \hw{अगर मुझे समय मिलेगा, तो मैं नेपाल जाऊँगा।} & If I get time, I'll go to Nepal. \\
+  \bottomrule
+\end{tabular}
+
+\noindent\textit{Later (B1):} unreal conditions use the habitual form without \textit{thaa}: \hw{अगर मैं अमीर होता, तो\ldots} = If I were rich, \ldots
+
+\subsection{1.15 [Add New Grammar Topic Here]}
 
 \textit{[Add heading, brief explanation, and example table.]}

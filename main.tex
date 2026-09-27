@@ -1,16 +1,13 @@
 \documentclass[11pt, a4paper]{article}
 
 % --- Engine & Fonts (XeLaTeX) ---
-\usepackage{ucharclasses}
-\setTransitionsForDevanagari{\hindifont}{\normalfont}
-\setTransitionTo{DevanagariExtended}{\hindifont}
-\setTransitionTo{DevanagariExtended}{\hindifont}
 \usepackage{fontspec}
 \usepackage{polyglossia}
 \setmainlanguage{english}
 \setotherlanguage{hindi}
 \newfontfamily\hindifont{Noto Sans Devanagari}[Script=Devanagari, Scale=1.1]
 \setmainfont{TeX Gyre Termes}   % Times-like, widely available
+\newfontfamily\ipafont{DejaVu Sans}[Scale=0.9]  % IPA symbols in the vowel table
 
 % --- Layout ---
 \usepackage[a4paper, top=2.5cm, bottom=2.5cm, left=2.8cm, right=2.8cm]{geometry}
@@ -50,6 +47,7 @@
 \usepackage{enumitem}
 \setlist{noitemsep, topsep=4pt}
 \usepackage{microtype}
+\setcounter{secnumdepth}{1}  % subsections carry manual numbers (e.g. 1.6)
 
 % -----------------------------------------------------------
 % Custom commands
